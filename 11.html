@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>
+            Bio Data
+        </title>
+    </head>
+    <body>
+        <table border="1">
+            <form action="11.php" method="get">
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                    <td>
+                        <input type="text" name="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        DOB
+                    </td>
+                    <td>
+                        <input type="date" name="txt1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender
+                    </td>
+                    <td>
+                        <input type="radio" name="gen" value="male">male
+                        <input type="radio" name="gen" value="female">female
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Nationality
+                    </td>
+                    <td>
+                        <select name="sel">
+                            <option value="india">India</option>
+                            <option value="germany">Germany</option>
+                            <option value="usa">USA</option>
+                            <option value="africa">Africa</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Languages Known</td>
+                    <td>
+                        <input type="checkbox" name="m[]" value="malayalam">Malayalam
+                        <input type="checkbox" name="m[]" value="english">English
+                        <input type="checkbox" name="m[]" value="french">French
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </form>
+        </table>
+    </body>
+</html>

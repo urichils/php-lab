@@ -1,0 +1,57 @@
+<!--payslip-->
+<!--write a php program application to generate the payslip of an emplyee by accepting name, basic salary and designation. the net salary will calulated based on the following conditions-->
+
+<!--designation    convergence     income tax
+    extra allowance  allowance
+    manager 500         1000        gross upto 2500     0% 
+    supervisor 200       750        gross upto 4000     3%
+    clerk 100            500        gross upto 6000     5%
+    peon                 250        gross > 5000        8%
+
+    hra=25%              gross = basic + hra + convergence + extra net = gross - income tax
+-->
+
+<html>
+    <body>
+        <h1 align="center">Enter the details</h1>
+        <form action="16.php" method="POST">
+            <table border="2">
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" name ="t1">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Basic Salary:
+                    </td>
+                    <td>
+                        <input type="text" name ="t2">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Designation:
+                    </td>
+                    <td>
+                        <select name="designation">
+                            <option value="supervisor">Supervisor</option>
+                            <option value="manager">Manager</option>
+                            <option value="clerk">Clerk</option>
+                            <option value="peon">Peon</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,37 @@
+<!--bank-->
+
+<!--create a table with the following fields accno, cust_name, balance. insert some records. design html page to accept account number and amount using textboxes and type of transaction using radio button. write php program to update balance according to the transaction.-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Account Table</title>
+    </head>
+    <body>
+        <center>
+            <form method="POST" action="19.php" name="form1">
+                <table>
+                    <tr>
+                        <td>Enter the account number: </td>
+                        <td><input type="text" name="accno"></td>
+                    </tr>
+                    <tr>
+                        <td>Enter the amount: </td>
+                        <td><input type="text" name="amount"></td>
+                    </tr>
+                    <tr>
+                        <td>Type of transaction: </td>
+                        <td>
+                            <input type="radio" name="r1" value="deposit">Deposit
+                            <input type="radio" name="r1" value="withdraw">Withdrawal
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Update" name="update">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </body>
